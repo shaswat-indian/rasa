@@ -17,6 +17,16 @@ This project adheres to `Semantic Versioning`_ starting with version 1.0.
 
 .. towncrier release notes start
 
+[1.10.24] - 2021-02-23
+^^^^^^^^^^^^^^^^^^^^^^
+
+Bugfixes
+--------
+- `#7895 <https://github.com/rasahq/rasa/issues/7895>`_: Fixed bug where the conversation does not lock before handling a reminder event.
+- `#8007 <https://github.com/rasahq/rasa/issues/8007>`_: Added ``**kwargs`` parameter back to ``KafkaEventBroker`` to fix error when instantiating event broker with a config containing parameters only relevant to the event consumer, such as ``group_id``
+- `#8019 <https://github.com/rasahq/rasa/issues/8019>`_: Added ``group_id`` parameter back to ``KafkaEventBroker`` to fix error when instantiating event broker with a config containing the ``group_id`` parameter which is only relevant to the event consumer
+
+
 [1.10.22] - 2021-02-05
 ^^^^^^^^^^^^^^^^^^^^^^
 
